@@ -1,0 +1,3 @@
+/home/xichuz/workspace/sanezoo/lzip/build/CMakeFiles/main.dir
+/home/xichuz/workspace/sanezoo/lzip/build/CMakeFiles/edit_cache.dir
+/home/xichuz/workspace/sanezoo/lzip/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,5 @@
+[requires]
+libzip/1.11.3
+[generators]
+CMakeDeps
+CMakeToolchain
