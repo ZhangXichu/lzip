@@ -45,18 +45,6 @@ int main () {
                     std::cout << "Failed to open file: " << entry.path();
                     continue;
                 }
-                
-                // // This creates zip from buffer in-memory
-                // std::vector<char> file_data((std::istreambuf_iterator<char>(input)), std::istreambuf_iterator<char>());
-
-                // char* buffer = (char*)malloc(file_data.size());
-                // memcpy(buffer, file_data.data(), file_data.size());
-                // zip_source_t* source = zip_source_buffer(zip, buffer, file_data.size(), 1);
-
-                // if (source == nullptr) {
-                //     std::cout << "Failed to create zip source for: " << entry.path() << std::endl;
-                //     continue;
-                // }
 
                 std::string file_path_str = entry.path().string();
                 zip_source_t* source = zip_source_file(zip, file_path_str.c_str(), 0, -1);
