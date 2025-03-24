@@ -1,1 +1,0 @@
-. "/home/xichuz/workspace/sanezoo/lzip/build/conanrunenv-debug-x86_64.sh"
