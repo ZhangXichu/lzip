@@ -13,7 +13,7 @@ using namespace std;
 
 int main () {
 
-    std::vector<std::string> record_paths = {"/media/xichuz/Elements/sanezoo/test/data/record1", "/media/xichuz/Elements/sanezoo/test/data/record2"};
+    std::vector<std::string> record_paths = {"/mnt/elements/shit/data/record1", "/mnt/elements/shit/data/record2"};
 
     std::string zip_filepath = "/var/tmp/output.zip";
 
