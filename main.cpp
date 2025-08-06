@@ -11,11 +11,19 @@
 using namespace std;
 
 
-int main () {
+int main (int argc, char* argv[]) 
+{
+    if (argc < 2) {
+        std::cerr << "Usage: " << argv[0] << " <output.zip> <record_path1> [record_path2 ...]" << std::endl;
+        return 1;
+    }
 
-    std::vector<std::string> record_paths = {"/mnt/elements/shit/data/record1", "/mnt/elements/shit/data/record2"};
+    std::string zip_filepath = argv[1];
+    std::vector<std::string> record_paths;
 
-    std::string zip_filepath = "/var/tmp/output.zip";
+    for (int i = 2; i < argc; ++i) {
+        record_paths.emplace_back(argv[i]);
+    }
 
     int error = 0;
     zip_t* zip = zip_open(zip_filepath.c_str(), ZIP_CREATE | ZIP_TRUNCATE, &error);
